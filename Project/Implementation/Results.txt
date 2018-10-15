@@ -1,0 +1,149 @@
+CASES:
+
+0. Algorithm without prunning vs algorithm using prunning:
+
+
+Super simple PDDL file:
+
+	1. BFS( without FOC)
+		Time: 
+		0:00:01.001279
+		
+	2. BFS (with FOC)
+		Time: 
+			0:00:00.302438
+
+Little bigger size:
+
+	1. BFS( without FOC)
+		Time: 0:20:17.625262
+		
+	2. BFS (with FOC)
+		Time:
+		     0:00:01.151655
+		
+
+1. Number of robots
+
+-> We have 3 PDDL files using the same grid.	
+	In robots_case_1.pddl -> 2 robots
+	In robots_case_2.pddl -> 3 robots
+	In robots_case_3.pddl -> 4 robots
+
+-> The cpu time achieved in all the three cases is:
+
+
+	Time:
+		0:00:01.969610
+	Time:
+		0:00:39.900257
+	Time:
+		0:28:30.818512
+
+
+2. Pattern
+
+-> We have 2 PDDL files using the same grid but changing the pattern.
+Basically, we have 1 pattern with all the tiles painted and another one with some tiles painted and some others not.
+
+	In pattern_case_1.pddl -> All the tiles are painted
+	In pattern_case_2.pddl -> Only some tiles are painted.
+
+
+-> The cpu time achieved in the two cases is:
+
+	Time: 
+		0:00:58.846066
+
+	Time: 
+ 
+		0:00:37.260438
+
+3. Size case
+
+-> We have 10 PDDL files changing its size and using only 2 robots.
+-> The goal in this case is basically study how the complexity increase in terms of #number of tiles but also in terms of the shape/structure of the grid.
+
+	In size_case_1.pddl -> 3 rows, 3 columns (3,3)
+
+	In size_case_2.pddl -> 4 rows, 3 columns (4,3)
+	
+	In size_case_3.pddl -> 3 rows, 4 columns (3,4)
+	
+	In size_case_4.pddl -> 4 rows, 4 columns (4,4)
+
+	In size_case_5.pddl -> 5 rows, 4 columns
+
+	In size_case_6.pddl -> 4 rows, 5 columns
+
+	In size_case_7.pddl -> 5 rows, 5 columns
+
+	In size_case_8.pddl -> 6 rows, 5 columns
+
+	In size_case_9.pddl -> 5 rows, 6 columns
+
+	In size_case_10.pddl -> 6 rows, 6 columns
+
+
+
+-> The cpu results in this case are:
+
+	1. Time: 
+		0:00:00.279385
+	
+	2. Time: 
+		0:00:00.345064
+
+	3. Time: 
+		
+		0:00:00.798212	
+	4. Time: 
+
+		0:00:01.140241
+
+	5. Time: 
+		0:00:01.622258
+
+	6. Time: 
+		0:00:04.383790
+
+	7. Time: 
+		0:00:06.509273
+
+	8. Time: 
+		0:00:08.390610
+
+	9. Time: 
+		0:00:25.309673
+
+	10.Time:
+		0:00:32.354215
+
+4. Available colors case (FUTURE RESEARCH)
+
+-> In that case we only have one PDDL file.
+What we want to test here is basically the fact that the amount of color can be reduced or limited.
+
+	4.1 Two robots with a lot of amount-color. 1000, 1000
+
+	4.2 Two robots with the limited amount of color and only for one color.
+		Robot 1 -> Can only paint black and has the “just enough”
+		Robot 2 -> Can only paint white and has the “just enough”
+
+	4.3 Two robots with the limited amount of color but they can paint with the two 		colors (black and white)
+
+
+-> Cpu time for the three cases: ( 6 cells in black, 6 cells in white)
+
+	4.1 Time:
+		0:00:00.650595
+
+
+
+
+	
+
+
+
+
+

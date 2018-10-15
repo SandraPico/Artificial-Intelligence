@@ -1,0 +1,25 @@
+1. MAIN DESCRIPTION:
+
+This project was created by Anna Hedström, David Vega, Antoine Legat and Sandra Picó Oristrell
+for the Artificial Intelligence course (DD2380) in the Machine Learning Master at KTH.
+
+The main topic of the project was Planning. For this reason, we choose the Floortile problem of the International Planning competition. 
+We solved the problem using PDDL domain as well as comparing it with an Optimization domain.
+Both implementations are attached in the implementation folder.
+
+
+2. IMPLEMENTATION:
+
+In the implementation folder we have the Optimization implementation and the PDDL implementation.
+In each of the scenarios, we tested different scenarios to be able to compare both approaches. The different scenarios are explained
+in the report of the project. Results section and conclusions are also attached on it.
+
+
+3. DOCUMENTATION:
+
+The project proposal and report are attached here, as well as the presentation slides.
+
+
+
+
+
